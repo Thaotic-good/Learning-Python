@@ -14,11 +14,15 @@ check_leap_years(2034, 2050)
 # checking a specific year
 def check_leap_year(year):
     if (year % 4 == 0 and year % 100 != 0) or (year % 400 == 0):
-        print(str(year) + ' is a leap year')
+        return str(year) + ' is a leap year'
     else:
-        print(str(year) + ' is not a leap year')
+        return str(year) + ' is not a leap year'
 
-check_leap_year(4)
+year_to_check = 4
+returned_value = check_leap_year(year_to_check)
+print(returned_value)
+
+
 
 
 
